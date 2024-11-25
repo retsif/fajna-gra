@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://biklwy5pw4d13"]
+
+[ext_resource type="Texture2D" uid="uid://dbj7wv0jyflv5" path="res://png/Gray.png" id="1_0bt21"]
+[ext_resource type="Texture2D" uid="uid://bm8rb4vv70v8a" path="res://png/cooltext455514447244282.png" id="2_n5yrr"]
+
+[node name="Meta" type="Node"]
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0bt21")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -431.5
+offset_top = -65.5
+offset_right = 431.5
+offset_bottom = 65.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_n5yrr")
