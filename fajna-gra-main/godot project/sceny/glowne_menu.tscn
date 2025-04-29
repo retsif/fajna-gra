@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu02hbkwqlhic"]
+
+[ext_resource type="Script" path="res://sceny/glowne_menu.gd" id="1_7dmq5"]
+[ext_resource type="Texture2D" uid="uid://dyh4563vmx34l" path="res://png/Brown.png" id="1_ta7f1"]
+[ext_resource type="Texture2D" uid="uid://bsbxj41ksxs65" path="res://png/cooltext455511585272373.png" id="2_50ws5"]
+
+[node name="GlowneMenu" type="Node"]
+script = ExtResource("1_7dmq5")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ta7f1")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -246.0
+offset_top = -223.0
+offset_right = 252.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_50ws5")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 224.0
+offset_top = 272.0
+offset_right = 489.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 30
+text = "Poziom 1"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 683.0
+offset_top = 272.0
+offset_right = 948.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 30
+text = "Poziom 2"
+
+[node name="quit" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 534.0
+offset_top = 466.0
+offset_right = -541.395
+offset_bottom = -123.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.185, 1.185)
+text = "WYJDŹ"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="button_down" from="quit" to="." method="_on_quit_button_down"]
